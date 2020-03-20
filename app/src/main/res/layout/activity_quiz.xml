@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/medium_margin"
+        android:orientation="vertical"
+        tools:context=".QuizActivity">
+
+        <!--Question 1 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="171dp"
+            android:src="@drawable/friends1"
+            android:layout_marginBottom="@dimen/medium_margin"/>
+
+        <TextView
+            android:text="Question 1. How many babies did Phoebe carry for her brother?"
+            style="@style/questionStyle" />
+
+        <RadioGroup
+            android:id="@+id/q1_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/q1_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+        </RadioGroup>
+
+        <!--Question 2 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 2. Why does Carol, Ross's wife leave him?" />
+
+        <RadioGroup
+            android:id="@+id/q2_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because Ross is a sad lump of clay" />
+
+            <RadioButton
+                android:id="@+id/q2_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because Carol was a Lesbian" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because Ross cheated" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because Ross was vegan" />
+        </RadioGroup>
+
+        <!--Question 3 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 3. Who does Ross marry in Las Vegas?" />
+
+        <RadioGroup
+            android:id="@+id/q3_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opera" />
+
+            <RadioButton
+                android:id="@+id/q3_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rachel" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phoebe" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Janet" />
+        </RadioGroup>
+
+        <!--Question 4 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 4. What was the name of Ross' monkey?" />
+
+        <EditText
+            android:id="@+id/q4_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Enter your answer"
+            android:inputType="text"/>
+
+        <!--Question 5 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 5. Where did Chandler meet Ross?" />
+
+        <EditText
+            android:id="@+id/q5_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your answer"
+            android:inputType="text"/>
+
+        <!--Question 6 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 6. What is the name of Joey's soap opera?" />
+
+        <RadioGroup
+            android:id="@+id/q6_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grey's Anatomy" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr Dre" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr Romantic" />
+
+            <RadioButton
+                android:id="@+id/q6_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days of our lives" />
+        </RadioGroup>
+
+        <!--Question 7 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 7. What is Rachel's surname?" />
+
+        <RadioGroup
+            android:id="@+id/q7_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red" />
+
+            <RadioButton
+                android:id="@+id/q7_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yellow" />
+        </RadioGroup>
+
+        <!--Question 8 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 8. What is Phoebe's sister called?" />
+
+        <RadioGroup
+            android:id="@+id/q8_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ariel" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulan" />
+
+            <RadioButton
+                android:id="@+id/q8_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ursula" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cindrella" />
+        </RadioGroup>
+
+        <!--Question 9 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 9. What types of bird do Joey and Chandler own?" />
+
+        <CheckBox
+            android:id="@+id/q9incorrect1_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pigeon" />
+        <CheckBox
+            android:id="@+id/q9correct2_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duck"/>
+        <CheckBox
+            android:id="@+id/q9correct1_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chick"/>
+        <CheckBox
+            android:id="@+id/q9incorrect2_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sparrow"/>
+
+        <!--Question 10 -->
+        <TextView
+            style="@style/questionStyle"
+            android:text="Question 10. What is Monica's job?" />
+
+        <RadioGroup
+            android:id="@+id/q10_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Shopper" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Related to Numbers" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinosaur Doctor" />
+
+            <RadioButton
+                android:id="@+id/q10_answer_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chef" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="@color/colorSecondaryText" />
+    </LinearLayout>
+
+</ScrollView>
